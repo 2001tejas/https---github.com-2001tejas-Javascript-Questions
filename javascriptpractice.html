@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+        // VARIABLES
+
+        // Goal: Declare a variable named 'myVar' and assign the value 10 to it
+        // let myVar;
+        // myVar = 10;
+        // console.log(myVar);
+
+        // Goal: Declare a variable named 'myString' and assign the value // 'Hello, World!' to it
+        //  let myString = "Hello, world!";
+        //  console.log(myString);
+
+        // Goal: Declare a variable named 'isTrue' and assign the value 'true' to it
+        // let isTrue = 'true';
+        // console.log(isTrue);
+
+        // Goal: Declare a variable named 'myDecimal' and assign the value 3.14 to it
+        // let myDecimal = 3.14;
+        // console.log(myDecimal);
+
+        // Goal: Declare a variable named 'myArray' // and assign an array containing three elements: 1, 2, and 3
+        // const myArray = [1, 2, 3];
+        // console.log(myArray)
+        // console.log(myArray.length)
+        // console.log(typeof(myArray))
+
+        // Goal: Swap the values of variable 'a' and 'b' without using a third variable // Initialize the variables let a = 5; let b = 10
+        // let a = 5;
+        // let b = 10;
+        // console.log(a,b)
+        // let temp = b;
+        // b = a;
+        // a = temp;
+        // console.log(a,b)
+
+        // Goal: Concatenate two strings 'str1' and 'str2' and store the result in a variable named 'result' // Initialize the strings let str1 = 'Hello, '; let str2 = 'World!';
+        // let str1 = 'Hello';
+        // let str2 = 'World!';
+        // let result;
+        // result = str1 + str2;
+        // console.log(result);
+
+        // Goal: Find the average of two numbers 'num1' and 'num2' // and store the result in a variable named 'average'. // Initialize the numbers let num1 = 5; let num2 = 10;
+        // let num1 = 5;
+        // let num2 = 10;
+        // console.log(num1,num2);
+        // let average;
+        // average = (num1+num2)/2;
+        // console.log(average);
+
+        // Goal: Find the length of a string 'myString' and store the result in a variable named 'length' // Initialize the string let myString = 'Hello, World!';
+        // let myString = 'Hello, World!'
+        // let length;
+        // console.log(myString)
+        // length = (myString.length);
+        // console.log(length);
+
+        // CONDITIONS
+
+        // Goal: Write an if else statement that checks if the given number 'num' is positive. // If it is, assign the string 'positive' to the variable 'result'; //otherwise, assign 'not positive'. const num = 5; let result;
+        // const num = 5;
+        // let result;
+        // if (num > 0) {
+        // result = 'positive';
+        // console.log(result);
+        // }
+
+        // Goal: Write an if else statement that checks if the given number 'num' is even. // If it is, assign the string 'even' to the variable 'result'; // otherwise, assign 'odd'. const num = 4; let result
+        // const num = 5;
+        // let result;
+        // if (num % 2 === 0) {
+        // result = 'even';
+        // console.log(result);
+        // }
+        // else {
+        // result = 'odd';
+        // console.log(result);
+        // }
+
+        // Goal: Write an if else statement that checks if the given number 'num' is positive and even. // If it is, assign the string 'positive even' to the variable 'result'; // otherwise, assign 'not positive even'. const num = 6; let result;
+        /*const num = 5;
+        let result;
+        if (num > 0) {
+            if (num % 2 === 0) {
+                result = 'positive even';
+                console.log(result);
+            }
+            else {
+                console.log('not positive even');
+
+            }
+        }*/
+
+        /*let num = ;
+        let result;
+
+        if(num > 0 && num % 2 === 0)
+        {
+            result = 'even';
+            console.log(result);
+        }
+        else{
+            console.log("Not Even");
+        }*/
+
+
+        // Goal: Write an if else statement that checks if the given number 'num' is a multiple of 3 or 5. // If it is, assign the string 'multiple' to the variable 'result'; // otherwise, assign 'not multiple'. const num = 9; let result;
+
+        /*const num = 25;
+        let result;
+        if (num % 3 === 0 || num % 5 === 0) {
+            result = 'multiple';
+            console.log(result);
+        }
+        else {
+            console.log('not multiple');
+        }*/
+
+        // Goal: Write an if else statement that checks if the given number 'num' is between 10 and 20 (inclusive). // If it is, assign the string 'between' to the variable 'result'; // otherwise, assign 'not between'. const num = 15; let result;
+        /*const num = 20;
+        let result;
+        if (num > 10 && num <= 20) {
+            result = 'between';
+            console.log(result);
+        }
+        else {
+            console.log('not between');
+        }*/
+
+        // Goal: Write an if else statement that checks if the given number 'num' is negative or zero. // If it is, assign the string 'negative or zero' to the variable 'result'; // otherwise, assign 'positive'. const num = -2; let result
+
+        /*const num = 2;
+        let result;
+        if (num < 0 || num === 0) {
+            result = 'negative or zero';
+            console.log(result);
+        }
+        else {
+            console.log('positive');
+        }*/
+
+        // Goal: Write an if else statement that checks if the given number 'num' is divisible by both 2 and 3. // If it is, assign the string 'divisible' to the variable 'result'; // otherwise, assign 'not divisible'. const num = 12; let result;
+
+        /* const num = 11;
+         let result;
+         if (num % 2 === 0 || num % 3 === 0) {
+             result = 'divisible';
+             console.log(result);
+         }
+         else {
+             console.log('not divisible');
+         }*/
+
+
+        /* In this exercise, you'll create a program that takes a student's numerical grade as input and uses a switch statement to classify it into a letter grade. Define the ranges for each letter grade (A, B, C, D, F) based on the typical grading scale
+   
+         getlettergrade(87);
+ 
+         function getlettergrade(numericalgrade)
+ {
+     let lettergrade;
+     switch (true)
+     {
+         case numericalgrade >= 90:
+             lettergrade = 'A';
+             break;
+ 
+         case numericalgrade >= 80:
+             lettergrade = 'B';
+             break;
+ 
+         case numericalgrade >= 70:
+             lettergrade = 'C    ';
+             break;
+ 
+         case numericalgrade >= 60:
+             lettergrade = 'D';
+             break;
+ 
+         default:
+             lettergrade = 'F';
+     }
+ 
+     console.log(lettergrade);
+ }*/
+        /*In this exercise, you'll build a program that prompts the user to input a number between 1 and 12, representing a month. Use a switch statement to output the number of days in that month. Account for leap years and consider February having 28 days in non-leap years and 29 days in leap years.
+       let month;
+       let num = parseInt(prompt('Enter a number between 1 and 12'));
+       
+       function getMonthDays(monthNum) {
+           switch (monthNum) {
+               case 1:
+                   month = 'January has 31 days.';
+                   break;
+       
+               case 2:
+                   // Check if it's a leap year (a simple check for demonstration purposes)
+                   const isLeapYear = (new Date().getFullYear() % 4 === 0);
+                   if (isLeapYear) {
+                       month = 'February has 29 days in a leap year.';
+                   } else {
+                       month = 'February has 28 days in a non-leap year.';
+                   }
+                   break;
+       
+               case 3:
+                   month = 'March has 31 days.';
+                   break;
+       
+               case 4:
+                   month = 'April has 30 days.';
+                   break;
+       
+               case 5:
+                   month = 'May has 31 days.';
+                   break;
+       
+               case 6:
+                   month = 'June has 30 days.';
+                   break;
+       
+               case 7:
+                   month = 'July has 31 days.';
+                   break;
+       
+               case 8:
+                   month = 'August has 31 days.';
+                   break;
+       
+               case 9:
+                   month = 'September has 30 days.';
+                   break;
+       
+               case 10:
+                   month = 'October has 31 days.';
+                   break;
+       
+               case 11:
+                   month = 'November has 30 days.';
+                   break;
+       
+               case 12:
+                   month = 'December has 31 days.';
+                   break;
+       
+               default:
+                   month = 'Invalid input. Please enter a number between 1 and 12.';
+           }
+       }
+       
+       getMonthDays(num);
+       console.log(month);*/
+
+        /*For all coffee enthusiasts, this exercise involves creating a coffee customizer program. The user will input their preferred type of coffee (e.g., "latte", "cappuccino", "espresso") and the program will output the ingredients needed. Use a switch statement to handle different coffee types and display their respective ingredients.
+        
+        customizer = prompt('enter a type of coffe')
+        let type;
+        
+            switch (customizer)
+            {
+                case 'latte':
+                    type = "Espresso, steamed milk, and a small amount of milk foam.";
+                    console.log(type);
+                    break;
+        
+                case 'cappuccino':
+                    type = "Espresso, steamed milk, and a thick layer of milk foam.";
+                    console.log(type);
+                    break;
+        
+                case 'espresso':
+                    type = "A shot of concentrated coffee made by forcing hot water through finely-ground coffee beans.";
+                    console.log(type);
+                    break;
+        
+                default:
+                    type = "sorry we dont have any information";
+                    console.log(type);
+            }*/
+
+        //Loops
+
+        // Goal: Write a for loop that prints numbers from 1 to 5 (inclusive) using console.log()
+
+        /*for(i=1;i<=5;i++)
+        {
+            let num = i;
+            console.log(num);
+    
+        }*/
+
+        // Goal: Write a for loop that calculates the sum of numbers from 1 to 5 (inclusive) and assigns the result to the variable 'sum' let sum = 0;
+
+        /*let sum = 0;
+        for (i = 1; i <= 5; i++) {
+            sum += i;
+            console.log(sum);
+        }*/
+
+        // Goal: Write a for loop that calculates the factorial of 5 and assigns the result to the variable 'factorial' let factorial = 1;
+        /* let factorial = 1;
+         for (let i = 1; i <= 5; i++) {
+             factorial *= i
+             console.log(factorial);
+         }*/
+
+
+        // Goal: Write a for loop that counts the number of even numbers between 1 and 10 (inclusive) and assigns the result to the variable 'count' let count = 0;
+
+        /*let count = 0;
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                count++
+                console.log(count);
+            }
+        }*/
+
+        // Goal: Write a for loop that calculates the sum of odd numbers from 1 to 10 (inclusive) and assigns the result to the variable 'sum' let sum = 0;
+
+        /*let sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 !== 0) {
+                sum += i;
+            }
+            console.log(sum);
+        }*/
+
+        // Goal: Write a for loop that prints the first 10 elements of the Fibonacci sequence using console.log() let a = 0; let b = 1
+
+        /*let a = 0;
+        let b = 1;
+        for (let i = 1; i <= 10; i++) {
+            console.log(a);
+            console.log(b);
+            let temp;
+            temp = a + b;
+            a = b;
+            b = temp;
+            console.log(temp);
+        }*/
+
+        // Goal: Write a for loop that reverses a given string 'str' and assigns the result to the variable 'reversed' let str = 'Hello'; let reversed = '';
+
+        /*let str = 'hello';
+        let reversed;
+        for (i = str.length - 1; i >= 0; i--) {
+            reversed += str[i];
+        }
+        console.log(reversed);*/
+
+        // Goal: Write a for loop that prints the first 10 square numbers using console.log()
+
+        /* for (let i = 1; i <= 10; i++) {
+             let square = i * i;
+             console.log(square);
+         }*/
+
+        // Goal: Write a for loop that calculates the sum of all even numbers between 1 and 20 (inclusive) and assigns the result to the variable 'sum' let sum = 0
+
+        /*let sum = 0;
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 === 0) {
+                sum += i;
+                console.log(sum);
+            }
+        }*/
+
+
+        // Goal: Write a for loop that prints the first 5 multiples of 7 using console.log()
+
+        /*for (let i = 1; i <= 5; i++) {
+            let multiple = 7 * i;
+            console.log(multiple);
+        }*/
+
+        // Goal: Write a for loop that calculates the factorial of a given number 'n' and assigns the result to the variable 'factorial' let n = 5; let factorial = 1;
+
+        /*let n = 5;
+        let factorial = 1;
+        for (let i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        console.log(factorial);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

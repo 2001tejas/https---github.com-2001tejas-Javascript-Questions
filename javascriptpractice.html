@@ -526,23 +526,81 @@
 
         let n1 = [2, 3, 4, 5, 6, 5];
         console.log(sumEvenNumbers(n1));*/
+      
+
+         /* most frequent occuring element;
+
+        function mostFreqeunt(arr) 
+        {
+            const object = {};
+            let maxElement = arr[0];
+            let maxCount = 1;
+            for (let i = 0; i < arr.length; i++) {
+                const element = arr[i];
+                if (object[element]) {
+                    object[element]++;
+                }
+                else {
+                    object[element] = 1;
+                }
+
+                if (object[element] > maxCount) {
+                    maxElement = element;
+                    maxCount = object[element];
+                }
+            }
+
+            return maxElement;
+        }
+
+        let arr1 = [9,9,2,5,0,4,0,1,7,4];
+        console.log(mostFreqeunt(arr1));*/
 
 
+        // Array
+
+        /*Concatenate two arrays arr1 = [1, 2, 3] and arr2 = [4, 5, 6] to create a new array result containing all elements.
+
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+        let arr3 = [];
+        arr3.concat(arr1, arr2);*/
+
+       /* Given an array temperaturesCelsius = [0, 25, 10, 32, 15], create a new array temperaturesFahrenheit by converting each Celsius temperature to Fahrenheit(C * 9 / 5) + 32.
+
+        const temperaturesCelsius = [0, 25, 10, 32, 15];
+        let temperaturesFahrenheit = temperaturesCelsius.map(temperaturesCelsius => (temperaturesCelsius * 9 / 5) + 32);*/
+
+        /*Calculate the sum of all numbers in the array numbers = [5, 10, 15, 20] using the reduce method.
+
+        const numbers = [5, 10, 15, 20];
+        const initial = 0;
+        const sum = numbers.reduce((accumlator, cuurentvalue) => accumlator + cuurentvalue);
+        console.log(sum);*/
+
+       /* Given a nested array matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]], create a new array containing all the elements in a single flat array.
+
+        const matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+        const arr = matrix.flat(3);*/
 
 
+       /* Reverse the array letters = ['a', 'b', 'c', 'd'] in place(without creating a new array).
 
+        const letters = ['a', 'b', 'c', 'd'];
+        for (let i = 0; i < letters.length / 2; i++) {
+            const temp = letters[i];
+            letters[i] = letters[letters.length - 1 - i];
+            letters[letters.length - 1 - i] = temp
+        }
+        console.log(letters);*/
 
+        /* Given an array duplicates = [1, 2, 2, 3, 4, 4, 5], create a new array uniqueValues containing only the unique values.
 
-
-
-
-
-
-
-
-
-
-
+        const duplicates = [1, 2, 2, 3, 4, 4, 5];
+        const uniqueset = new Set(duplicates);
+        const uniqueValues = [...uniqueset];
+        console.log(uniqueValues);*/
+        
     </script>
 </body>
 

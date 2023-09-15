@@ -462,7 +462,7 @@
         const num2 = 5;
         console.log(isEven(num1));
         console.log(isEven(num2));*/
-  
+
             // Goal: Create a function called 'factorial' that takes a non-negative integer as input and returns the factorial of the input number
 
         /* function factorial(num) {
@@ -526,7 +526,7 @@
 
         let n1 = [2, 3, 4, 5, 6, 5];
         console.log(sumEvenNumbers(n1));*/
-      
+
 
          /* most frequent occuring element;
 
@@ -600,7 +600,7 @@
         const uniqueset = new Set(duplicates);
         const uniqueValues = [...uniqueset];
         console.log(uniqueValues);*/
-        
+
         /*//1. create object named student with properities name, age, and grade.
 
 const student = {
@@ -668,6 +668,96 @@ else {
 const person = { name: 'Eleanor', age: 28 }
 for (let key in person)
     console.log(key);*/
+
+   /* Add a method calculateArea to an object rectangle = { width: 10, height: 5 } that calculates and returns its area.
+
+        const rectangle = { width: 10, height: 5 }
+        function calculateArea() {
+            let area = this.width * this.height;
+            return area;
+        }*/
+
+        /*Given an object fruit = { name: 'Apple', color: 'Red' }, create a function that takes the object and returns an array of its property names.
+
+        const fruit = { name: 'Apple', color: 'Red' }
+        function propertyname(fruit) {
+            return Object.keys(fruit);
+
+        }*/
+
+        /*Remove the expired property from the object product = { name: 'Milk', price: 2.99, expired: true } only if it is expired.
+
+        const product = { name: 'Milk', price: 2.99, expired: true }
+        if (this.expired !== true) {
+            delete this.expired;
+        }*/
+
+      /*  Create a prototype object vehicle with properties type and wheels.Create a car object that inherits from vehicle and sets its own brand property.
+
+        const vehicle = { type: 'Cyden', model: '500', color: 'white' };
+        const car = Object.create(vehicle);*/
+
+        /*Write a function that performs a deep copy of an object, including nested objects and arrays.
+
+        function deepCopy(obj) {
+            if (obj === null || typeof obj !== 'object') {
+                // If the input is not an object, return it as is (primitive values or functions)
+                return obj;
+            }
+
+            if (Array.isArray(obj)) {
+                // If the input is an array, create a new array and copy its elements recursively
+                const newArray = [];
+                for (let i = 0; i < obj.length; i++) {
+                    newArray[i] = deepCopy(obj[i]);
+                }
+                return newArray;
+            }
+
+            // If the input is an object, create a new object and copy its properties recursively
+            const newObj = {};
+            for (const key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    newObj[key] = deepCopy(obj[key]);
+                }
+            }
+            return newObj;
+        }
+
+        // Example usage:
+        const originalObject = {
+            name: 'John',
+            age: 30,
+            address: {
+                city: 'New York',
+                postalCode: '10001',
+            },
+            hobbies: ['Reading', 'Hiking'],
+        };
+
+        const copiedObject = deepCopy(originalObject);
+
+        console.log(copiedObject);*/
+
+        /*Serialize an object person = { name: 'Alex', greet: function () { console.log('Hello!'); } } to JSON format, ensuring the function is handled properly.
+
+        const person = {
+            name: 'Alex',
+            greet: function () { console.log('Hello!'); }
+        };
+
+        // Serialize the object to JSON, excluding the 'greet' function
+        const serializedPerson = JSON.stringify(person, (key, value) => {
+            if (typeof value === 'function') {
+                // If the property is a function, return its source code as a string
+                return value.toString();
+            }
+            return value;
+        });
+
+        console.log(serializedPerson);*/
+
+
     </script>
 </body>
 
